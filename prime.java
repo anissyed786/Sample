@@ -1,26 +1,29 @@
-public class Prime 
+class Prime
 {
-public static void main(String[] args) 
-{
-System.out.println("Prime numbers from 1 to 100 are:");
-for (int num = 2; num <= 100;) 
-{
-if (isPrime(num)) 
-{
-System.out.print(num + " ");
-}
-}
-}
-// Function to check if a number is prime
-public static boolean isPrime(int num) 
-{
-if(num <= 1)
-return false;
-for(int i= 2; i <= math.sqrt(n); i++)
-{
-if (n % i == 0)
-return false; 
-}
-return true;
-}
+   public static void main (String[] args)
+   {		
+       int i =0;
+       int num =0;
+      
+       String  primeNumbers = "";
+
+       for (i = 1; i <= 100; i++)         
+       { 		  	  
+          int counter=0; 	  
+          for(num =i; num>=1; num--)
+	  {
+             if(i%num==0)
+	     {
+ 		counter = counter + 1;
+	     }
+	  }
+	  if (counter ==2)
+	  {
+	     
+	     primeNumbers = primeNumbers + i + " ";
+	  }	
+       }	
+       System.out.println("Prime numbers from 1 to 100 are :");
+       System.out.println(primeNumbers);
+   }
 }
